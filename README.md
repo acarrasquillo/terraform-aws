@@ -47,9 +47,21 @@ resource "aws_instance" "my_ec2" {
 }
 ```
 
-# Add the define the `aws_profile` variable
+# Add the define the `aws_profile` variable on `variables.tf`
 ```
 variable "aws_profile"{
   default = "abcaccount"
 }
+```
+
+# Do all commands inside your my-tf-plan directory
+
+# Init terraform
+```
+terraform init
+```
+
+# terraform plan
+```
+terraform plan
 ```
